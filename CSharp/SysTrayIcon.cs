@@ -57,3 +57,24 @@
             container.Dispose();
         }
     }
+
+/*
+
+Usage:
+ 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SysTrayIcon icon = new SysTrayIcon();
+            icon.Init("A2 Utils", "icon.ico"); // initialize the tray icon
+
+            icon.AddNode("Exit", Application.Exit); // add some nodes
+
+            icon.ApplicationLoop(); // initialize the application loop
+
+            icon.Dispose(); // dispose of the tray shit so it doesnt stick around after the program closes
+        }
+    }
+
+*/
